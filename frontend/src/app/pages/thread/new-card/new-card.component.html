@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-content>
+    <form fxLayout="column">
+      <mat-form-field appearance="outline">
+        <mat-label>Author</mat-label>
+        <input name="author" matInput>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Message</mat-label>
+        <input name="message" matInput>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Image</mat-label>
+        <app-file-input></app-file-input>
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <button type="submit" mat-raised-button color="primary">Send</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
