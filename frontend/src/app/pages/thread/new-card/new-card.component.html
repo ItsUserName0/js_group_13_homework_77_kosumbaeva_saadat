@@ -1,17 +1,17 @@
 <mat-card>
   <mat-card-content>
-    <form fxLayout="column">
+    <form fxLayout="column" #f="ngForm" (ngSubmit)="sendMessage(); f.resetForm()">
       <mat-form-field appearance="outline">
         <mat-label>Author</mat-label>
-        <input name="author" matInput>
+        <input name="author" matInput ngModel>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Message</mat-label>
-        <input name="message" matInput>
+        <input name="message" matInput ngModel>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Image</mat-label>
-        <app-file-input></app-file-input>
+        <app-file-input name="image" ngModel></app-file-input>
       </mat-form-field>
       <div fxLayout="row" fxLayoutAlign="flex-end">
         <button type="submit" mat-raised-button color="primary">Send</button>

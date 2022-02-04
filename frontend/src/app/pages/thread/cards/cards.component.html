@@ -1,8 +1,6 @@
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
+<ng-container *ngIf="!isFetching">
+  <app-card *ngFor="let m of messages" [message]=m></app-card>
+</ng-container>
 
+<mat-spinner *ngIf="isFetching" diameter="50"></mat-spinner>
 

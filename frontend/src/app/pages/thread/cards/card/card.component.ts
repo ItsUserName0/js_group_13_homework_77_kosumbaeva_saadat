@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Message } from '../../../../models/message.model';
 
 @Component({
   selector: 'app-card',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent implements OnInit {
+  @Input() message!: Message;
 
   constructor() { }
 

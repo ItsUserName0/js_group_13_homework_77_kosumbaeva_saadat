@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e00fbb2f-0a25-4804-8a67-ab1be4cafe7b" name="Changes" comment="Created basic app structure." />
+    <list default="true" id="e00fbb2f-0a25-4804-8a67-ab1be4cafe7b" name="Changes" comment="API accepts requests for get, post, except files.">
+      <change afterPath="$PROJECT_DIR$/api/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/fileDb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/nodemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/models/message.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/services/messages.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,7 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -22,12 +34,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -43,6 +56,8 @@
       <workItem from="1643903183848" duration="8654000" />
       <workItem from="1643953627519" duration="627000" />
       <workItem from="1643954275468" duration="1071000" />
+      <workItem from="1643955362583" duration="743000" />
+      <workItem from="1643956115470" duration="3818000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend initial commit.">
       <created>1643903396659</created>
@@ -65,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643954456687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="API accepts requests for get, post, except files.">
+      <created>1643958804610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643958804610</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,8 +105,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/api" />
+    </ignored-roots>
     <MESSAGE value="Frontend initial commit." />
     <MESSAGE value="Created basic app structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created basic app structure." />
+    <MESSAGE value="API accepts requests for get, post, except files." />
+    <option name="LAST_COMMIT_MESSAGE" value="API accepts requests for get, post, except files." />
   </component>
 </project>

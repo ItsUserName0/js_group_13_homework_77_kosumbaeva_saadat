@@ -1,10 +1,10 @@
 <mat-card>
   <mat-card-content fxLayout="row">
-    <img [alt]="'Photo of '"
+    <img [alt]="'Photo of ' + message.author"
          [src]="'https://w1.pngwing.com/pngs/768/905/png-transparent-food-icon-cheeseburger-hamburger-french-fries-veggie-burger-fast-food-cartoon-drawing.png'"/>
     <div>
-      <mat-card-title>Author</mat-card-title>
-      <p>Message</p>
+      <mat-card-title>{{ message.author }}</mat-card-title>
+      <p>{{ message.message }}</p>
     </div>
   </mat-card-content>
 </mat-card>
