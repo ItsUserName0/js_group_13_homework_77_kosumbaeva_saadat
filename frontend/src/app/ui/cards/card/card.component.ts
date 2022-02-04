@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Message } from '../../../../models/message.model';
+import { Message } from '../../../models/message.model';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +9,8 @@ import { Message } from '../../../../models/message.model';
 })
 export class CardComponent implements OnInit {
   @Input() message!: Message;
+
+  apiUrl = environment.apiUrl;
 
   constructor() { }
 

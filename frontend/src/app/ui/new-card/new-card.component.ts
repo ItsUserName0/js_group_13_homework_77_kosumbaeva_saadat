@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { MessagesService } from '../../../services/messages.service';
-import { MessageData } from '../../../models/message.model';
+import { MessagesService } from '../../services/messages.service';
+import { MessageData } from '../../models/message.model';
 
 @Component({
   selector: 'app-new-card',

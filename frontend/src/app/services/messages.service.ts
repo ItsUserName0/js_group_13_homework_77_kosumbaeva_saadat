@@ -34,6 +34,14 @@ export class MessagesService {
   }
 
   createMessage(messageData: MessageData) {
-    return this.http.post(environment.apiUrl + '/messages/new', messageData);
+    const formData = new FormData();
+    formData.append('message', messageData.message);
+    if (messageData.author) {
+      formData.append('author', messageData.author);
+    }
+    if (messageData.image) {
+      formData.append('image', messageData.image);
+    }
+    return this.http.post(environment.apiUrl + '/messages/new', formData);
   }
 }

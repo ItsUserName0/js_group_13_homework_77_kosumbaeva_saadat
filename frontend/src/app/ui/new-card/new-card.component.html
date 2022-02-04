@@ -7,14 +7,14 @@
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Message</mat-label>
-        <input name="message" matInput ngModel>
+        <input name="message" matInput required ngModel>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Image</mat-label>
         <app-file-input name="image" ngModel></app-file-input>
       </mat-form-field>
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <button type="submit" mat-raised-button color="primary">Send</button>
+        <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Send</button>
       </div>
     </form>
   </mat-card-content>

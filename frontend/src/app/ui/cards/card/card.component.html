@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-content fxLayout="row">
+    <img [src]="apiUrl + '/uploads/' + message.image" [alt]="'Photo of ' + message.author" *ngIf="message.image"/>
+    <div>
+      <mat-card-title>{{ message.author | author }}</mat-card-title>
+      <p>{{ message.message }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
