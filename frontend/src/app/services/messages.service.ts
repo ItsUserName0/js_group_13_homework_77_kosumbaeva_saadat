@@ -35,13 +35,13 @@ export class MessagesService {
 
   createMessage(messageData: MessageData) {
     const formData = new FormData();
-    formData.append('message', messageData.message);
-    if (messageData.author) {
-      formData.append('author', messageData.author);
-    }
-    if (messageData.image) {
-      formData.append('image', messageData.image);
-    }
+
+    Object.keys(messageData).forEach(key => {
+      if (messageData[key] !== null) {
+        formData.append(key, messageData[key]);
+      }
+    });
+
     return this.http.post(environment.apiUrl + '/messages/new', formData);
   }
 }

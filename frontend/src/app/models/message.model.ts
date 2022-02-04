@@ -4,6 +4,7 @@ export class Message {
 }
 
 export interface MessageData {
+  [key: string]: any,
   author: string | null,
   message: string,
   image: File | null
